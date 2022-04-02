@@ -1,0 +1,8 @@
+{{page-title "Child"}}
+
+{{#animated-value "fullscreen-zoom" use=this.transition duration=1000 initialInsertion=true finalRemoval=true}}
+  <div local-class="zoom">
+    <h1>Zoom</h1>
+    <LinkTo @route="zoom.index">Close</LinkTo>
+  </div>
+{{/animated-value}}

@@ -1,0 +1,18 @@
+.zoom {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  border: 2px solid #0D3349;
+  background: lightgrey;
+}
+
+.beacon {
+  position: fixed;
+  height: 1px;
+  width: 1px;
+  top: 50%;
+  left: 50%;
+  z-index: -1;
+}

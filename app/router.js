@@ -11,4 +11,7 @@ Router.map(function () {
   this.route('modal');
   this.route('modal-css');
   this.route('modal-css-modifier');
+  this.route('zoom', function () {
+    this.route('child');
+  });
 });
