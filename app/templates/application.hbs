@@ -1,7 +1,10 @@
 {{page-title "EmberEurope"}}
 
-{{!-- The following component displays Ember's default welcome message. --}}
-<WelcomePage />
-{{!-- Feel free to remove this! --}}
+<div>
+  <LinkTo @route="css">CSS Button</LinkTo>
+  <LinkTo @route="modal-css">CSS Modal</LinkTo>
+  <LinkTo @route="modal-css-modifier">CSS Modal - ember-css-transitions</LinkTo>
+  <LinkTo @route="modal">ember-animated</LinkTo>
+</div>
 
 {{outlet}}

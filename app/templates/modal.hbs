@@ -1,0 +1,19 @@
+{{page-title "Modal"}}
+
+<button type="button" {{on "click" (fn (mut this.showModal) true)}}>Open modal</button>
+
+<div local-class="container">
+  {{#animated-if this.showModal use=this.backdropTransition duration=5000}}
+    <div local-class="backdrop"></div>
+  {{/animated-if}}
+
+  {{#animated-if this.showModal use=this.modalTransition duration=5000}}
+    <div local-class="modal">
+      <h2>My Modal</h2>
+      <p>
+        Some text.
+      </p>
+      <button type="button" {{on "click" (fn (mut this.showModal) false)}}>Close modal</button>
+    </div>
+  {{/animated-if}}
+</div>

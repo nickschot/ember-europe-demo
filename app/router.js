@@ -6,4 +6,9 @@ export default class Router extends EmberRouter {
   rootURL = config.rootURL;
 }
 
-Router.map(function () {});
+Router.map(function () {
+  this.route('css');
+  this.route('modal');
+  this.route('modal-css');
+  this.route('modal-css-modifier');
+});

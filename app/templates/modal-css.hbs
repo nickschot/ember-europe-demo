@@ -1,0 +1,16 @@
+{{page-title "Modal CSS"}}
+
+<button type="button" {{on "click" (fn (mut this.showModal) true)}}>Open modal</button>
+
+{{#if this.showModal}}
+  <div local-class="container">
+    <div local-class="backdrop"></div>
+    <div local-class="modal">
+      <h2>My Modal</h2>
+      <p>
+        Some text.
+      </p>
+      <button type="button" {{on "click" (fn (mut this.showModal) false)}}>Close modal</button>
+    </div>
+  </div>
+{{/if}}

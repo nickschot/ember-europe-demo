@@ -1,0 +1,16 @@
+{{page-title "ModalCssModifier"}}
+
+<button type="button" {{on "click" (fn (mut this.showModal) true)}}>Open modal</button>
+
+<div local-class="container">
+  {{#if this.showModal}}
+    <div local-class="backdrop" {{css-transition "backdrop"}}></div>
+    <div local-class="modal" {{css-transition "modal"}}>
+      <h2>My Modal</h2>
+      <p>
+        Some text.
+      </p>
+      <button type="button" {{on "click" (fn (mut this.showModal) false)}}>Close modal</button>
+    </div>
+  {{/if}}
+</div>
